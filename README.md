@@ -1,2 +1,2 @@
-# sophieportofolio.github.io
-portofolio
+# sophieportfolio.github.io
+portfolio
