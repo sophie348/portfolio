@@ -113,7 +113,7 @@ background: #eee;display: inline-block;}
 *     Langues
 ******************************************/
 #langues .container { display: flex; flex-direction: row; justify-content: space-between; }
-#langues .langue { font-size: 1em; padding-top: 3px; width: min-content; display: flex; }
+#langues .langue { font-size: 1.3em; padding-top: 3px; width: min-content; display: flex; }
 #langues .niveau { font-size: 1.2em; }
 
 /******************************************
