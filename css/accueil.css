@@ -13,7 +13,10 @@ and open the template in the editor.
 }
 .jumbotron {    
     padding-bottom: 32px;
-
+    margin-top: 20px;
+}
+#bouton li{
+    display:inline;
 }
 
 
