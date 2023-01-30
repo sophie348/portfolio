@@ -10,13 +10,59 @@ and open the template in the editor.
 
 #maPhoto {
     margin-right: 10px;
+    width:190px;
+   
+
 }
 .jumbotron {    
     padding-bottom: 32px;
     margin-top: 20px;
+    
 }
 #bouton li{
     display:inline;
 }
+#bouton li:hover{
+    background-color:darkblue;
+}
+
+@media (max-width:800px){
+    #presenter{
+        clear: both;
+    }
+  
+          
+}
+@media(max-width:500px){
+    
+    
+    btn-lg{
+        display: none;
+    }
+    #boutonPresentation .btn{
+        padding:5px;
+        font-size: 0.8rem;
+
+    }
+    body{
+        font-size: 0.7rem;
+        
+    
+    }
+    h1{
+        font-size:1.3rem;
+        margin-top:10px;
+        padding-top: 20px;
+    }
+   
+    h2{
+        font-size:1.2rem;
+    }
+    footer{
+        font-size:0.7rem;
+    }
+}
+
+
 
 

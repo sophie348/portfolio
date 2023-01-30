@@ -13,6 +13,7 @@ and open the template in the editor.
 */
 .body {
     padding-top: 50px;
+    font-size: 14px;
 }
 /*html{
     font-size: 15px;
@@ -38,10 +39,11 @@ and open the template in the editor.
     display: inline-block;
 }
 
+
 #cv-photo img {
     width: 160px;
     height: 160px;
-    border-radius: 50%;
+    border-radius: 80%;
 }
 
 #cv-intro h1 {
@@ -63,6 +65,11 @@ and open the template in the editor.
     margin-top: 15px;
     content: '';
     display: block;
+}
+
+#bouton li:hover{
+    background-color:darkblue;
+    opacity:0.8;
 }
 
 /*
@@ -102,7 +109,7 @@ and open the template in the editor.
     left: 7.8px;
     top: 0;
     display: block;
-    background: linear-gradient(to bottom, #ffffff 0%,
+    background: linear-gradient(to bottom, #FFFFFF 0%,
             #E2001A 7%, #E2001A, #ffffff 100%);
     content: "";
 }
@@ -166,6 +173,7 @@ and open the template in the editor.
 
 /* Pour empècher la déformation du parcours scolaire selon la STA */
 @media (max-width: 1000px) {
+    
     div.parcours,div.cadreCV>.rubrique{
         font-size: 0.9rem;
     }
@@ -192,6 +200,7 @@ and open the template in the editor.
 
     #parcours .details {
         width: 70%;
+        
     }
 
     div.langue {
@@ -228,6 +237,25 @@ and open the template in the editor.
     }
 }
 
+@media(max-width:500px){
+    body{
+        font-size: 0.7rem;
+        
+    }
+    h1{
+        font-size:0.8rem;
+    }
+    #cv-intro>h1{
+        font-size:1.3rem;
+    }
+    .experience div.profession{
+        font-size: 1rem;
+    }
+    h2{
+        font-size:1.2rem;
+    }
+}
+
 @media (min-width: 992px) {
     #parcours .date {
         width: 17%;
@@ -236,6 +264,7 @@ and open the template in the editor.
     #parcours .details {
         width: 83%;
     }
+   
 }
 
 @media (min-width: 1200px) {
@@ -317,6 +346,11 @@ and open the template in the editor.
     -moz-filter: grayscale(0);
     -ms-filter: grayscale(0);
     -o-filter: grayscale(0);
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
 }
 
 /******************************************
@@ -400,3 +434,4 @@ and open the template in the editor.
 #bouton li {
     display: inline;
 }
+
