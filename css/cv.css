@@ -11,6 +11,7 @@ and open the template in the editor.
 /*
 * En tete
 */
+
 .body {
     padding-top: 50px;
     font-size: 14px;
@@ -22,20 +23,19 @@ and open the template in the editor.
 .cadreCV {
     padding-bottom: 15px;
     background: white;
+    
 }
 
 #cv-entete {
     margin-top: 30px;
     width: 100%;
+    
 }
 
 #cv-photo {
     width: 172px;
     height: 172px;
-    border-radius: 50%;
-    overflow:auto;
     padding: 5px;
-    background: #eee;
     display: inline-block;
 }
 
@@ -43,8 +43,10 @@ and open the template in the editor.
 #cv-photo img {
     width: 160px;
     height: 160px;
-    border-radius: 80%;
+    border-radius: 20px 20px 65px 25px;
+
 }
+
 
 #cv-intro h1 {
     margin: 0;
@@ -67,6 +69,8 @@ and open the template in the editor.
     display: block;
 }
 
+
+
 #bouton li:hover{
     background-color:darkblue;
     opacity:0.8;
@@ -80,7 +84,7 @@ and open the template in the editor.
 }
 
 .rubrique h2 {
-    color: rgb(0, 218, 226);
+    color: rgb(69, 201, 205);
 }
 
 .rubrique h2::before {
@@ -172,7 +176,7 @@ and open the template in the editor.
 }
 
 /* Pour empècher la déformation du parcours scolaire selon la STA */
-@media (max-width: 1000px) {
+@media (max-width: 900px) {
     
     div.parcours,div.cadreCV>.rubrique{
         font-size: 0.9rem;
