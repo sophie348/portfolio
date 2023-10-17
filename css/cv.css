@@ -57,7 +57,7 @@ and open the template in the editor.
 }
 
 #cv-intro h1 span {
-    color: rgb(0, 120, 226);
+    color: rgb(226, 0, 26);
 }
 
 #cv-intro:after {
@@ -84,7 +84,7 @@ and open the template in the editor.
 }
 
 .rubrique h2 {
-    color: rgb(69, 201, 205);
+    color: rgba(228, 25, 25, 0.756);
 }
 
 .rubrique h2::before {
