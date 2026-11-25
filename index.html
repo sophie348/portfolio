@@ -84,10 +84,10 @@
     <div class="jumbotron mb-5 mt-5 "><!-- Emplacement pour le contenu principal de la page -->
             <div class="container">
                 <h1>Pour me contacter</h1>
-    <form action="https://formspree.io/f/mwloaped" method="POST">
+    <form id="contact-form" action="https://formspree.io/f/mwloaped" method="POST">
   <div class="form-group">
     <label for="email">E-mail :</label>
-    <input type="email" class="form-control" id="email" name="email" placeholder="nom@exemple.fr" required>
+    <input type="email" class="form-control" id="email" name="email" placeholder="nom@exemple.com" required>
   </div>
 
   <div class="form-group">
@@ -99,14 +99,17 @@
     <input type="checkbox" class="form-check-input" id="consentement" name="consentement" required>
     <label class="form-check-label" for="consentement">J'accepte que mon message soit utilisé pour me répondre.</label>
   </div>
-  <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html">
+ 
+  <p id="form-status" role="status"></p>
 
   <button type="submit" class="btn btn-primary">Envoyer</button>
 </form>
 
+
+
 </div>
 </div>
-           
+          
       <footer>
         
             <div class="container mt-5 p-5">
@@ -146,6 +149,7 @@
                 <p class="text-center" id="copyright">© 2026</p>
             
         </footer>
+        
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

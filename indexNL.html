@@ -84,7 +84,9 @@
     <form action="https://formspree.io/f/mwloaped" method="POST">
   <div class="form-group">
     <label for="email">E-mailadres :</label>
-    <input type="email" class="form-control" id="email" name="emailN" placeholder="naam@example.com" required>
+    <input type="email" class="form-control" id="email" name="emailN" placeholder="naam@example.com" required
+    oninvalid="this.setCustomValidity('Vul dit veld in met een geldig email')"
+  oninput="this.setCustomValidity('')">
   </div>
 
   <div class="form-group">
@@ -96,7 +98,7 @@
     <input type="checkbox" class="form-check-input" id="consentementN" name="consentement" required>
     <label class="form-check-label" for="consentement">Ik ga akkoord met het privacybeleid</label>
   </div>
-  <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html">
+  
 
   <button type="submit" class="btn btn-primary">Envoyer</button>
 </form>
