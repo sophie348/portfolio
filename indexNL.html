@@ -78,6 +78,12 @@
             </div>
         </div>
 
+        <div class='jumbotron mt-10' >
+      <div class="container">
+                        <a class='btn btn-primary' href='https://github.com/sophie348' target="_blank">mijn projecten</a>
+                    </div>
+</div>
+
         <div class="jumbotron mb-5 mt-5 "><!-- Emplacement pour le contenu principal de la page -->
             <div class="container">
                 <h1>Contact met mij op</h1>
@@ -86,7 +92,7 @@
     <label for="email">E-mailadres :</label>
     <input type="email" class="form-control" id="email" name="emailN" placeholder="naam@example.com" required
     oninvalid="this.setCustomValidity('Vul dit veld in met een geldig email')"
-  oninput="this.setCustomValidity('')">
+  onchange="this.setCustomValidity('')">
   </div>
 
   <div class="form-group">
@@ -95,12 +101,12 @@
   </div>
 
   <div class="form-check mb-3">
-    <input type="checkbox" class="form-check-input" id="consentementN" name="consentement" required>
+    <input type="checkbox" class="form-check-input" id="consentementN" name="consentement" oninvalid="this.setCustomValidity('Gelieve dit vakje aan te vinken.')"required>
     <label class="form-check-label" for="consentement">Ik ga akkoord met het privacybeleid</label>
   </div>
   
 
-  <button type="submit" class="btn btn-primary">Envoyer</button>
+  <button type="submit" class="btn btn-primary">Verzenden</button>
 </form>
 
 </div>
