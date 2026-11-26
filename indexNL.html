@@ -86,8 +86,9 @@
 
         <div class="jumbotron mb-5 mt-5 "><!-- Emplacement pour le contenu principal de la page -->
             <div class="container">
+                <div class="row justify-content-center">
                 <h1>Contact met mij op</h1>
-    <form action="https://formspree.io/f/mwloaped" method="POST">
+    <form action="https://formspree.io/f/mwloaped" method="POST" class="col-12 col-md-10 col-lg-8">
   <div class="form-group">
     <label for="email">E-mailadres :</label>
     <input type="email" class="form-control" id="email" name="emailN" placeholder="naam@example.com" required
@@ -97,18 +98,25 @@
 
   <div class="form-group">
     <label for="message">Bericht :</label>
-    <textarea class="form-control" id="message" name="messageN" rows="4" required></textarea>
+    <textarea class="form-control" id="message" name="messageN"   rows="6"
+  maxlength="3000"
+  required
+  placeholder="Typ je bericht…"></textarea>
   </div>
-
+<div class="honeypot" aria-hidden="true">
+ 
+  <input type="text" name="_gotcha" style="display:none">
+</div>
   <div class="form-check mb-3">
     <input type="checkbox" class="form-check-input" id="consentementN" name="consentement" oninvalid="this.setCustomValidity('Gelieve dit vakje aan te vinken.')"required>
-    <label class="form-check-label" for="consentement">Ik ga akkoord met het privacybeleid</label>
+    <label class="form-check-label" for="consentement">Ik ben het ermee eens dat mijn e-mailadres gebruikt zal worden om mij te antwoorden.</label>
   </div>
   
 
   <button type="submit" class="btn btn-primary">Verzenden</button>
 </form>
 
+</div>
 </div>
 </div>
         <div class="container mt-5 ft-5 ft-md-3 p-5"> 

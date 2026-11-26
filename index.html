@@ -86,10 +86,12 @@
                         <a class='btn btn-primary' href='https://github.com/sophie348' target="_blank">mes projets</a>
                     </div>
 </div>
-    <div class="jumbotron mb-5 mt-5 "><!-- Emplacement pour le contenu principal de la page -->
+    <div class="jumbotron mb-5 mt-5"><!-- Emplacement pour le contenu principal de la page -->
             <div class="container">
+                <div class="row justify-content-center">
                 <h1>Pour me contacter</h1>
-    <form id="contact-form" action="https://formspree.io/f/mwloaped" method="POST">
+                
+    <form id="contact-form" action="https://formspree.io/f/mwloaped" method="POST" class="col-12 col-md-10 col-lg-8" >
   <div class="form-group">
     <label for="email">E-mail :</label>
     <input type="email" class="form-control" id="email" name="email" placeholder="nom@exemple.com" required>
@@ -97,18 +99,23 @@
 
   <div class="form-group">
     <label for="message">Message :</label>
-    <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+    <textarea class="form-control" id="message" name="message" rows="6" maxlength="3000" required placeholder="Écrivez votre message…"></textarea>
   </div>
+<!-- Honeypot : les visiteurs ne doivent pas le voir ni le remplir -->
+<div class="honeypot" aria-hidden="true">
 
+  <input type="text" name="_gotcha" style="display:none">
+</div>
   <div class="form-check mb-3">
     <input type="checkbox" class="form-check-input" id="consentement" name="consentement" required>
-    <label class="form-check-label" for="consentement">J'accepte que mon message soit utilisé pour me répondre.</label>
+    <label class="form-check-label" for="consentement">J'accepte que mon email soit utilisé pour me répondre.</label>
   </div>
  
   <p id="form-status" role="status"></p>
 
   <button type="submit" class="btn btn-primary">Envoyer</button>
 </form>
+</div>
 
 
 </div>

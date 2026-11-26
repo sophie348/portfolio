@@ -66,4 +66,12 @@ and open the template in the editor.
     footer {
         font-size: 0.7rem;
     }
+
+    .honeypot {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
 }
